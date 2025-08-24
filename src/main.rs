@@ -8,7 +8,7 @@ fn main() {
         .read_line(&mut age)
         .expect("Failed to read line");
 
-    let age: u32 = age.trim().parse().expect("Please type a number!");
+    let age: u32 = age.trim().parse().expect("Please type a number!"); // String::new is converted into a int or fl IDK 🤫
 
     if age >= 18 {
         println!("You can enter the bar.");
